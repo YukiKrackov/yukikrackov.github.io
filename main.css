@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Navigation */
+nav {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    z-index: 100;
+    display: flex;
+    gap: 60px;
+    font-family: 'thasadith';
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    position: relative;
+    transition: all 0.3s ease;
+    font-family: 'thasadith';
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: white;
+    opacity: 0.8;
+    font-family: 'thasadith';
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+/* Left section - Oil painting */
+.left-section {
+    width: 40%;
+    position: relative;
+    background: linear-gradient(45deg, #2c5f5f, #4a8080);
+}
+
+.Oil_Painting {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    margin-bottom: auto;
+}
+
+/* Center section - Names and description */
+.center-section {
+    width: 35%;
+    padding: 80px 0 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.names {
+    margin-bottom: 60px;
+}
+
+.name {
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.name.first {
+    margin-bottom: 20px;
+}
+
+.description-section {
+    max-width: 400px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #cccccc;
+    margin-bottom: 40px;
+}
+
+/* Right section - Profile and person image */
+.right-section {
+    width: 25%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+}
+.RKProfessional {
+    display: flex;
+    padding: 1rem;
+    margin: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    flex: auto;
+    gap: 2rem;
+    max-width: fit-content;
+}
+.dual-employees-btn {
+    position: absolute;
+    bottom: 80px;
+    right: 50px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dual-employees-btn:hover {
+    background: white;
+    color: black;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .left-section, .center-section, .right-section {
+        width: 100%;
+    }
+    
+    nav {
+        position: relative;
+        top: 0;
+        right: 0;
+        justify-content: center;
+        padding: 20px 0;
+        gap: 40px;
+    }
+}
