@@ -86,19 +86,29 @@ nav a:hover {
 /* Center section - Names and description */
 .center-section {
     width: 35%;
-    padding: 80px 0 0 60px;
+    padding-top: 100px;
+    padding-left: 70px;
+    padding-bottom: 70px;
+    padding-right: 0;
     display: flex;
-    flex-direction: column;
+    display: inline;
+    flex-direction: column; 
     justify-content: flex-start;
+    width: 35%;
 }
 
 .names {
     font-family: 'Cinzel';
-    font-size: 60px;
+    font-size: 43px;
+    line-height: 2;
 }
 
 .description-section {
-    max-width: 400px;
+    font-family: 'thasadith';
+    display :inline;
+    margin-left: 200px;
+    margin-top: 40px;
+    max-width: 600px;
 }
 
 .title {
@@ -110,7 +120,7 @@ nav a:hover {
 }
 
 .description {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.7;
     color: #cccccc;
     margin-bottom: 40px;
@@ -129,8 +139,15 @@ nav a:hover {
 .RKProfessional {
     width: 200px; /* Size of the circular image */
     height: 260px;
-    border: 2px solid #333; /* Subtle border if desired */
     margin-left: 500px;
+}
+.KYCasual {
+    display: inline;
+    width: 200px; /* Size of the circular image */
+    height: 260px;
+    border: 2px solid #cccccc; /* Subtle border if desired */
+    margin-right: 1070px;
+    margin-bottom: 600px;
 }
 .dual-employees-btn {
     position: absolute;
